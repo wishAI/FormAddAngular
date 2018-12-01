@@ -1,0 +1,43 @@
+.wrapper {
+  position: relative;
+  height: 40px;
+  color: white;
+  background-color: #009094; }
+
+.wrapper * {
+  display: inline-block; }
+
+.wrapper div {
+  height: 100%;
+  overflow: hidden; }
+
+.wrapper div * {
+  line-height: 40px; }
+
+p {
+  font-size: 14px; }
+
+#appLogo {
+  vertical-align: top; }
+
+#appLogo a {
+  height: 100%;
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: lighter;
+  color: white; }
+
+#appTitle {
+  width: 200px;
+  position: absolute;
+  right: calc(50% - 100px);
+  text-align: center;
+  text-overflow: ellipsis;
+  cursor: default; }
+
+#appStatus {
+  position: absolute;
+  right: 20px;
+  cursor: default; }
+
+/*# sourceMappingURL=title-bar.component.css.map */

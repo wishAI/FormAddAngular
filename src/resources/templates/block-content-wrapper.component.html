@@ -1,0 +1,11 @@
+<div class="wrapper" [ngSwitch]="block.dType">
+    <ng-container *ngSwitchCase="'title'">
+        <title-content></title-content>
+    </ng-container>
+    <ng-container *ngSwitchCase="'paragraph'">
+        <paragraph-content></paragraph-content>
+    </ng-container>
+    <ng-container *ngSwitchCase="'image'">
+        <image-content></image-content>
+    </ng-container>
+</div>

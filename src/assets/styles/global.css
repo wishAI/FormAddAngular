@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+* {
+  font-family: Helvetica, Arial, "Microsoft YaHei", STHeiti, "Droid Sans Fallback", sans-serif, Segoe UI Emoji;
+  text-decoration: none; }
+
+.text-light {
+  font-family: "Segoe UI", "Helvetica Neue", Roboto, "Ubuntu Light", "Microsoft YaHei", "PingFangSC Ultralight", "Source Han Sans SC", sans-serif;
+  font-weight: 100;
+  letter-spacing: -1px; }
+
+.text-bold {
+  font-weight: 700; }
+
+input {
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #CCCCCC; }
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,42 @@
+@import "../../assets/styles/_var.sass"
+
+.wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+
+.tool-wrapper
+    width: 60px
+    height: calc(#{$ribbonContentHeight} - 20px)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 10px 7px
+    border: none
+    background-color: transparent
+    font-size: 12px
+    color: $darkGrey
+    cursor: default
+
+.btn-tool img
+    height: 50px
+
+.btn-tool
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-left: 5px
+    padding-right: 5px
+    padding-bottom: 5px
+
+.btn-tool:hover
+    background-color: $hoverGrey
+
+.tool-separator
+    width: 1px
+    height: calc(#{$ribbonContentHeight} - 10px)
+    background-color: $borderGrey
+    margin-top: 5px
+
+

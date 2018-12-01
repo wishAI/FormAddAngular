@@ -1,0 +1,21 @@
+.wrapper {
+  height: 50px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #CCCCCC;
+  align-items: center; }
+
+.block-icon {
+  width: 40px;
+  margin-right: 10px; }
+
+.block-preview {
+  width: calc(200px - 80px);
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+  color: #444444;
+  text-overflow: ellipsis; }
+
+/*# sourceMappingURL=block-list-item.component.css.map */

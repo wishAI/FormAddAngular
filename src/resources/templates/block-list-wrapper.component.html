@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <ul class="block-list" id="BlockList">
+        <li *ngFor="let block of blocks; let i = index"
+            #item
+            class="block-item"
+            [class.block-item-select]="i == selectedIdx"
+            (click)="onItemClick(i)">
+            <block-list-item [type]="block._dType"></block-list-item>
+        </li>
+    </ul>
+</div>

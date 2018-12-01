@@ -1,0 +1,21 @@
+@import "../../assets/styles/_var.sass"
+
+.wrapper
+    height: 50px
+    padding-left: 15px
+    display: flex
+    flex-direction: row
+    border-bottom: 1px solid $borderGrey
+    align-items: center
+
+.block-icon
+    width: 40px
+    margin-right: 10px
+
+.block-preview
+    width: calc(#{$BlockItemWidth} - 80px)
+    overflow: hidden
+    white-space: nowrap
+    font-size: 15px
+    color: $darkGrey
+    text-overflow: ellipsis

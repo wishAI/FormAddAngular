@@ -1,0 +1,13 @@
+<div class="main-wrapper">
+    <title-bar class="title-bar"></title-bar>
+    <ribbon-wrapper class="ribbon-wrapper" id="ribbonWrapper" [blockType]="blocks[contentIdx].dType"></ribbon-wrapper>
+    
+    <div class="workplace-wrapper">
+        <block-list-wrapper class="block-list-wrapper"
+                            [blocks]="blocks"
+                            [selectedIdx]="contentIdx">
+        </block-list-wrapper>
+        <block-content-wrapper class="block-content-wrapper">
+        </block-content-wrapper>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="wrapper">
+    <div class="option-list">
+        <input #fixedTab
+               type="radio"
+               name="ribbon"
+               id="btnRibbonOptionFile"
+               value="file"
+               [(ngModel)]="_ribbonType">
+        <label class="rad-option" for="btnRibbonOptionFile">文件</label>
+        <input #fixedTab
+               type="radio"
+               name="ribbon"
+               id="btnRibbonOptionInsert"
+               value="insert"
+               [(ngModel)]="_ribbonType">
+        <label class="rad-option" for="btnRibbonOptionInsert">插入卡片</label>
+        <ng-container [ngSwitch]=blockType>
+            <ng-container *ngSwitchCase="'paragraph'">
+                <input #fixedTab
+                       type="radio"
+                       name="ribbon"
+                       id="btnRibbonOptionParagraph"
+                       value="paragraph"
+                       [(ngModel)]="_ribbonType">
+                <label class="rad-option" for="btnRibbonOptionParagraph">段落</label>
+            </ng-container>
+            <ng-container *ngSwitchCase="'image'">
+                <input #fixedTab
+                       type="radio"
+                       name="ribbon"
+                       id="btnRibbonOptionImage"
+                       value="image"
+                       [(ngModel)]="_ribbonType">
+                <label class="rad-option" for="btnRibbonOptionImage">图片</label>
+            </ng-container>
+        </ng-container>
+    </div>
+    <div>
+        <!-- multiple options inside, use script to change -->
+        <div class="tool-list-wrapper">
+            <div [ngSwitch]=_ribbonType class="tool-wrapper-left">
+                <ng-container *ngSwitchCase="'file'">
+                    <ribbon-tool [type]="'open'" [isLeft]="true"></ribbon-tool>
+                    <ribbon-tool [type]="'save'" [isLeft]="true"></ribbon-tool>
+                </ng-container>
+                <ng-container *ngSwitchCase="'insert'">
+                    <ribbon-tool [type]="'paragraph'" [isLeft]="true"></ribbon-tool>
+                    <ribbon-tool [type]="'image'" [isLeft]="true"></ribbon-tool>
+                </ng-container>
+                <ng-container *ngSwitchCase="'paragraph'">
+                    <ribbon-tool [type]="'align'" [isLeft]="true"></ribbon-tool>
+                    <ribbon-tool [type]="'strong'" [isLeft]="true"></ribbon-tool>
+                    <ribbon-tool [type]="'emoji'" [isLeft]="true"></ribbon-tool>
+                </ng-container>
+                <ng-container *ngSwitchCase="'image'">
+                    <ribbon-tool [type]="'uploadImage'" [isLeft]="true"></ribbon-tool>
+                </ng-container>
+            </div>
+            
+            <div [ngSwitch]=_ribbonType class="tool-wrapper-right">
+                <ng-container *ngSwitchCase="'file'">
+                    <ribbon-tool [type]="'target'" [isLeft]="false"></ribbon-tool>
+                    <ribbon-tool [type]="'submit'" [isLeft]="false"></ribbon-tool>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>

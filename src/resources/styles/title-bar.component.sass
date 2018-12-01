@@ -1,0 +1,43 @@
+@import "../../assets/styles/_var.sass"
+
+.wrapper
+    position: relative
+    height: $titleBarHeight
+    color: white
+    background-color: $mainColor
+
+.wrapper *
+    display: inline-block
+
+.wrapper div
+    height: 100%
+    overflow: hidden
+
+.wrapper div *
+    line-height: $titleBarHeight
+
+p
+    font-size: 14px
+
+#appLogo
+    vertical-align: top
+
+#appLogo a
+    height: 100%
+    margin-left: 20px
+    font-size: 22px
+    font-weight: lighter
+    color: white
+
+#appTitle
+    width: 200px
+    position: absolute
+    right: calc(50% - 100px)
+    text-align: center
+    text-overflow: ellipsis
+    cursor: default
+
+#appStatus
+    position: absolute
+    right: 20px
+    cursor: default

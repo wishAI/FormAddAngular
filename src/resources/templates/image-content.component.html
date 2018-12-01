@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <!-- the selected image in the center, need add several left and right with script if screen wide -->
+    <!-- !! should use absolute position in CSS !! -->
+    <!-- !! should add the move back and forward btn, both view and moving a image (?? should be in the btnToolBig ??) !! -->
+    <div id="image-box" *ngIf="imageId!=-1">
+        <img [src]="imageIdToUrl(imageId)" alt="image">
+    </div>
+    <div id="info-wrapper">
+        <input placeholder="注解" class="image-info light" type="text">
+    </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "form-add-config.js",
+  "sourceRoot": "",
+  "sources": [
+    "form-add-config.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAM,CAAC,aAAP,GAAuB;IAEnB,mBAAA,EAAqB,iBAFF;IAGnB,iBAAA,EAAmB,eAHA;IAInB,gBAAA,EAAkB,cAJC;IAMnB,kBAAA,EAAoB,qBAND;IAOnB,eAAA,EAAiB,kBAPE;IAUnB,iBAAA,EAAmB,2BAVA;;AAAvB"
+}

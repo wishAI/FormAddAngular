@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div *ngIf="!isLeft" class="tool-separator"></div>
+    <div class="tool-wrapper" (click)="broadcastCommand()">
+        <div class="btn-tool">
+            <img src="assets/icons/{{ type }}.svg">
+            <span>{{ name }}</span>
+        </div>
+    </div>
+    <div *ngIf="isLeft" class="tool-separator"></div>
+</div>
+
+

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,QAAQ;EACJ,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,CAAC;EAKd,UAAU,EAAE,IAAI;;AAEpB,iBAAiB;EACb,gBAAgB,ECRR,OAAO;;ADUnB,kBAAkB;EACd,gBAAgB,EAAE,kBAAsB;;AAE5C,WAAW;EACP,UAAU,EAAE,CAAC;EACb,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,CAAC",
+"sources": ["block-list-wrapper.component.sass","../../assets/styles/_var.sass"],
+"names": [],
+"file": "block-list-wrapper.component.css"
+}
