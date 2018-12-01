@@ -1,6 +1,9 @@
+
+import {throwError as observableThrowError, Observable} from 'rxjs';
+
+import {catchError, map} from 'rxjs/operators';
 import {Injectable} from "@angular/core";
 import {Response, Headers, RequestOptions, Http} from "@angular/http";
-import {Observable} from "rxjs";
 
 declare var FormAddConfig: any;
 
@@ -15,7 +18,7 @@ export class SourceUploadService {
     }
 
     private handleError(err: Object): Observable<Object> {
-        return Observable.throw(err);
+        return observableThrowError(err);
     }
 
     public storeSrc(src: Object, type: string): Observable<Object> {
@@ -33,8 +36,8 @@ export class SourceUploadService {
                 break;
         }
 
-        return this.http.post(url, src, options)
-            .map(this.extractResponse.bind(this))
-            .catch(this.handleError.bind(this));
+        return this.http.post(url, src, options).pipe(
+            map(this.extractResponse.bind(this)),
+            catchError(this.handleError.bind(this)),);
     }
 }

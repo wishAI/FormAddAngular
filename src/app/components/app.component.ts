@@ -11,8 +11,8 @@ import {BlockContentWrapperComponent} from "./block_content/block-content-wrappe
 
 @Component({
     selector: 'app-root',
-    templateUrl: '../../resources/templates/app.component.html',
-    styleUrls: ['../../resources/styles/app.component.css']
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.sass']
 })
 export class AppComponent implements CommandListener, OnInit {
     private contentType: string;
@@ -67,7 +67,7 @@ export class AppComponent implements CommandListener, OnInit {
                 break;
         }
     }
-    
+
     private saveCurrentBlock() {
         this.blockContentWrapper.saveBlock(this.blocks, this.contentIdx);
     }
@@ -75,19 +75,19 @@ export class AppComponent implements CommandListener, OnInit {
     private loadCurrentBlock() {
         this.blockContentWrapper.loadBlock(this.blocks[this.contentIdx]);
     }
- 
+
     private appendBlock(dType: string) {
-        // create a new block based on dtype 
+        // create a new block based on dtype
         let block: Block;
         switch(dType) {
-            case "image": 
+            case "image":
                 block = new ImageBlock();
                 break;
             case "paragraph":
                 block = new ParagraphBlock();
                 break;
         }
-    
+
         // put the new block into list
         this.blocks.push(block);
 
