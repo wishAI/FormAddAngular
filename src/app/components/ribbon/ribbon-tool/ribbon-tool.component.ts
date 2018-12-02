@@ -3,8 +3,8 @@ import {CommandManager} from '../../../services/command-manager.service';
 
 @Component({
     selector: 'app-ribbon-tool',
-    templateUrl: '../../../resources/templates/ribbon-tool.component.html',
-    styleUrls: ['../../../resources/styles/ribbon-tool.component.css']
+    templateUrl: 'ribbon-tool.component.html',
+    styleUrls: ['ribbon-tool.component.sass']
 })
 export class RibbonToolComponent implements OnInit {
 

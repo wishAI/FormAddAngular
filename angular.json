@@ -21,7 +21,7 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/assets/styles/global.css"
+              "src/assets/styles/global.sass"
             ],
             "scripts": []
           },

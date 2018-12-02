@@ -2,12 +2,13 @@ import {Component, ViewChild, OnInit} from '@angular/core';
 import {RibbonWrapperComponent} from './ribbon/ribbon.component';
 import {CommandListener} from '../services/command-listener.service';
 import {CommandManager} from '../services/command-manager.service';
-import {Block} from '../internals/block';
-import {TitleBlock} from '../internals/title-block';
-import {ParagraphBlock} from '../internals/paragraph-block';
-import {ImageBlock} from '../internals/image-block';
+import {Block} from '../models/block';
+import {TitleBlock} from '../models/title-block';
+import {ParagraphBlock} from '../models/paragraph-block';
+import {ImageBlock} from '../models/image-block';
 import {BlockListWrapperComponent} from './blocklist/block-list/block-list.component';
 import {BlockContentWrapperComponent} from './block-content-wrapper/block-content-wrapper.component';
+import { Image } from 'app/models/sources/image';
 
 @Component({
     selector: 'app-root',

@@ -1,7 +1,7 @@
-import {Component, forwardRef} from '@angular/core';
+import { Component, forwardRef } from '@angular/core';
 import { BlockContentComponent } from '../block-content';
-import { TitleBlock } from '../../../internals/title-block';
-import { Block } from '../../../internals/block';
+import { TitleBlock } from '../../../models/title-block';
+import { Block } from '../../../models/block';
 
 @Component({
     selector: 'app-title-content',

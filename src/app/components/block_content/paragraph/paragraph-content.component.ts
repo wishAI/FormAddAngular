@@ -1,7 +1,7 @@
 import {Component, ViewChild, ElementRef} from '@angular/core';
 import { BlockContentComponent } from '../block-content';
-import { Block } from 'app/internals/block';
-import { ParagraphBlock } from '../../../internals/paragraph-block';
+import { Block } from 'app/models/block';
+import { ParagraphBlock } from '../../../models/paragraph-block';
 
 @Component({
     selector: 'app-paragraph-content',

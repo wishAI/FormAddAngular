@@ -5,7 +5,7 @@ import {CommandListener} from '../../services/command-listener.service';
 @Component({
     selector: 'app-ribbon-wrapper',
     templateUrl: 'ribbon.component.html',
-    styleUrls: ['ribbon.component.css']
+    styleUrls: ['ribbon.component.sass']
 })
 export class RibbonWrapperComponent implements OnInit, CommandListener, AfterViewInit {
 

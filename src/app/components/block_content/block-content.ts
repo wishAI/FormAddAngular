@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import { Block } from 'app/internals/block';
+import { Block } from 'app/models/block';
 
 
 export abstract class BlockContentComponent {

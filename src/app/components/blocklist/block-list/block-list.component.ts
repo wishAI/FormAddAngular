@@ -1,5 +1,5 @@
 import {Component, Input, ViewChildren, QueryList, ElementRef} from '@angular/core';
-import {Block} from '../../../internals/block';
+import {Block} from '../../../models/block';
 import {CommandManager} from '../../../services/command-manager.service';
 import {CommandListener} from '../../../services/command-listener.service';
 

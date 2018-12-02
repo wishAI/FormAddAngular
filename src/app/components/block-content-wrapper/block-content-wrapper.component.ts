@@ -1,5 +1,5 @@
 import {Component, Input, OnInit, OnChanges, SimpleChanges, ViewChild} from '@angular/core';
-import {Block} from '../../internals/block';
+import {Block} from '../../models/block';
 import { BlockContentComponent } from '../block_content/block-content';
 
 @Component({

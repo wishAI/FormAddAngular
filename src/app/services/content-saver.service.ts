@@ -1,6 +1,6 @@
-import {Injectable} from "@angular/core";
-import {ContentSaveIntendListener} from "./content-save-intend-listener";
-import {Block} from "../internals/block";
+import {Injectable} from '@angular/core';
+import {ContentSaveIntendListener} from './content-save-intend-listener';
+import {Block} from '../models/block';
 
 
 @Injectable()

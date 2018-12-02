@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {URLSearchParams} from '@angular/http';
 import { BlockContentComponent } from '../block-content';
-import { ImageBlock } from '../../../internals/image-block';
-import { Block } from 'app/internals/block';
+import { ImageBlock } from '../../../models/image-block';
+import { Block } from 'app/models/block';
 import { CommandManager } from '../../../services/command-manager.service';
 
 declare var FormAddConfig;

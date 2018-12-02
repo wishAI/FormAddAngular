@@ -11,10 +11,11 @@ import {BlockListWrapperComponent} from '../components/blocklist/block-list/bloc
 import {BlockContentWrapperComponent} from '../components/block-content-wrapper/block-content-wrapper.component';
 import {CommandManager} from '../services/command-manager.service';
 import {BlockListItemComponent} from '../components/blocklist/block-list-item/block-list-item.component';
-import {ParagraphBlock} from '../internals/paragraph-block';
+import {ParagraphBlock} from '../models/paragraph-block';
 import {ParagraphContentComponent} from '../components/block_content/paragraph/paragraph-content.component';
 import {ImageContentComponent} from '../components/block_content/image/image-content.component';
 import {TitleContentComponent} from '../components/block_content/title/title-content.component';
+
 
 @NgModule({
     declarations: [
