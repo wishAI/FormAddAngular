@@ -1,17 +1,14 @@
-import {
-    Component, OnInit, ElementRef, ViewChildren, QueryList, AfterViewInit, AfterViewChecked,
-    Input
-} from "@angular/core";
-import {CommandManager} from "../../services/command-manager.service";
-import {CommandListener} from "../../services/command-listener.service";
+import {Component, OnInit, ElementRef, ViewChildren, QueryList, AfterViewInit, AfterViewChecked, Input} from '@angular/core';
+import {CommandManager} from '../../services/command-manager.service';
+import {CommandListener} from '../../services/command-listener.service';
 
 @Component({
-    selector: "ribbon-wrapper",
-    templateUrl: "../../../resources/templates/ribbon-wrapper.component.html",
-    styleUrls: ["../../../resources/styles/ribbon-wrapper.component.css"]
+    selector: 'app-ribbon-wrapper',
+    templateUrl: 'ribbon.component.html',
+    styleUrls: ['ribbon.component.css']
 })
 export class RibbonWrapperComponent implements OnInit, CommandListener, AfterViewInit {
-    
+
     @Input() public blockType: string;
     public _ribbonType: string;
 
@@ -19,7 +16,7 @@ export class RibbonWrapperComponent implements OnInit, CommandListener, AfterVie
         private _eleRef: ElementRef,
         private cmdManager: CommandManager
     ) {
-        this._ribbonType = "file";
+        this._ribbonType = 'file';
     }
 
     public ngOnInit(): void {

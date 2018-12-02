@@ -1,4 +1,6 @@
 <div class="wrapper">
+
+    {% comment %} option list {% endcomment %}
     <div class="option-list">
         <input #fixedTab
                type="radio"
@@ -35,34 +37,36 @@
             </ng-container>
         </ng-container>
     </div>
+
+    {% comment %} tool list {% endcomment %}
     <div>
-        <!-- multiple options inside, use script to change -->
         <div class="tool-list-wrapper">
             <div [ngSwitch]=_ribbonType class="tool-wrapper-left">
                 <ng-container *ngSwitchCase="'file'">
-                    <ribbon-tool [type]="'open'" [isLeft]="true"></ribbon-tool>
-                    <ribbon-tool [type]="'save'" [isLeft]="true"></ribbon-tool>
+                    <app-ribbon-tool [type]="'open'" [isLeft]="true"></app-ribbon-tool>
+                    <app-ribbon-tool [type]="'save'" [isLeft]="true"></app-ribbon-tool>
                 </ng-container>
                 <ng-container *ngSwitchCase="'insert'">
-                    <ribbon-tool [type]="'paragraph'" [isLeft]="true"></ribbon-tool>
-                    <ribbon-tool [type]="'image'" [isLeft]="true"></ribbon-tool>
+                    <app-ribbon-tool [type]="'paragraph'" [isLeft]="true"></app-ribbon-tool>
+                    <app-ribbon-tool [type]="'image'" [isLeft]="true"></app-ribbon-tool>
                 </ng-container>
                 <ng-container *ngSwitchCase="'paragraph'">
-                    <ribbon-tool [type]="'align'" [isLeft]="true"></ribbon-tool>
-                    <ribbon-tool [type]="'strong'" [isLeft]="true"></ribbon-tool>
-                    <ribbon-tool [type]="'emoji'" [isLeft]="true"></ribbon-tool>
+                    <app-ribbon-tool [type]="'align'" [isLeft]="true"></app-ribbon-tool>
+                    <app-ribbon-tool [type]="'strong'" [isLeft]="true"></app-ribbon-tool>
+                    <app-ribbon-tool [type]="'emoji'" [isLeft]="true"></app-ribbon-tool>
                 </ng-container>
                 <ng-container *ngSwitchCase="'image'">
-                    <ribbon-tool [type]="'uploadImage'" [isLeft]="true"></ribbon-tool>
+                    <app-ribbon-tool [type]="'uploadImage'" [isLeft]="true"></app-ribbon-tool>
                 </ng-container>
             </div>
-            
+
             <div [ngSwitch]=_ribbonType class="tool-wrapper-right">
                 <ng-container *ngSwitchCase="'file'">
-                    <ribbon-tool [type]="'target'" [isLeft]="false"></ribbon-tool>
-                    <ribbon-tool [type]="'submit'" [isLeft]="false"></ribbon-tool>
+                    <app-ribbon-tool [type]="'target'" [isLeft]="false"></app-ribbon-tool>
+                    <app-ribbon-tool [type]="'submit'" [isLeft]="false"></app-ribbon-tool>
                 </ng-container>
             </div>
         </div>
     </div>
+
 </div>

@@ -1,11 +1,13 @@
 <div class="wrapper" [ngSwitch]="block.dType">
+
     <ng-container *ngSwitchCase="'title'">
-        <title-content></title-content>
+        <app-title-content></app-title-content>
     </ng-container>
     <ng-container *ngSwitchCase="'paragraph'">
-        <paragraph-content></paragraph-content>
+        <app-paragraph-content></app-paragraph-content>
     </ng-container>
     <ng-container *ngSwitchCase="'image'">
-        <image-content></image-content>
+        <app-image-content></app-image-content>
     </ng-container>
+
 </div>

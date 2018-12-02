@@ -1,13 +1,13 @@
 import {Component, ViewChild, OnInit} from '@angular/core';
-import {RibbonWrapperComponent} from "./ribbon/ribbon-wrapper.component";
-import {CommandListener} from "../services/command-listener.service";
-import {CommandManager} from "../services/command-manager.service";
-import {Block} from "../internals/block";
-import {TitleBlock} from "../internals/title-block";
-import {ParagraphBlock} from "../internals/paragraph-block";
-import {ImageBlock} from "../internals/image-block";
-import {BlockListWrapperComponent} from "./block_list/block-list-wrapper.component";
-import {BlockContentWrapperComponent} from "./block_content/block-content-wrapper.component";
+import {RibbonWrapperComponent} from './ribbon/ribbon.component';
+import {CommandListener} from '../services/command-listener.service';
+import {CommandManager} from '../services/command-manager.service';
+import {Block} from '../internals/block';
+import {TitleBlock} from '../internals/title-block';
+import {ParagraphBlock} from '../internals/paragraph-block';
+import {ImageBlock} from '../internals/image-block';
+import {BlockListWrapperComponent} from './blocklist/block-list/block-list.component';
+import {BlockContentWrapperComponent} from './block-content-wrapper/block-content-wrapper.component';
 
 @Component({
     selector: 'app-root',
@@ -15,6 +15,7 @@ import {BlockContentWrapperComponent} from "./block_content/block-content-wrappe
     styleUrls: ['app.component.sass']
 })
 export class AppComponent implements CommandListener, OnInit {
+
     private contentType: string;
     private contentIdx: number = 0;
 
@@ -25,6 +26,7 @@ export class AppComponent implements CommandListener, OnInit {
     @ViewChild(BlockContentWrapperComponent)
     private blockContentWrapper: BlockContentWrapperComponent;
 
+
     // all the blocks in the project here
     public blocks: Block[];
 
@@ -33,7 +35,7 @@ export class AppComponent implements CommandListener, OnInit {
     ) {
         // append a title block
         this.blocks = [];
-        let title: Block = new TitleBlock();
+        const title: Block = new TitleBlock();
         this.blocks.push(title);
     }
 
